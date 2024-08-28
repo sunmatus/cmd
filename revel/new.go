@@ -14,8 +14,8 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/revel/cmd/model"
-	"github.com/revel/cmd/utils"
+	"github.com/sunmatus/cmd/model"
+	"github.com/sunmatus/cmd/utils"
 )
 
 const ErrNoSkeleton Error = "failed to find skeleton in filepath"

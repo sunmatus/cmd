@@ -18,10 +18,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/revel/cmd/model"
-	"github.com/revel/cmd/parser"
-	"github.com/revel/cmd/parser2"
-	"github.com/revel/cmd/utils"
+	"github.com/sunmatus/cmd/model"
+	"github.com/sunmatus/cmd/parser"
+	"github.com/sunmatus/cmd/parser2"
+	"github.com/sunmatus/cmd/utils"
 )
 
 var importErrorPattern = regexp.MustCompile("cannot find package \"([^\"]+)\"")
@@ -484,9 +484,9 @@ package run
 
 import (
 	"reflect"
-	"github.com/revel/revel"{{range $k, $v := $.ImportPaths}}
+	"github.com/sunmatus/revel"{{range $k, $v := $.ImportPaths}}
 	{{$v}} "{{$k}}"{{end}}
-	"github.com/revel/revel/testing"
+	"github.com/sunmatus/revel/testing"
 )
 
 var (
@@ -540,7 +540,7 @@ package main
 import (
 	"flag"
 	"{{.ImportPath}}/app/tmp/run"
-	"github.com/revel/revel"
+	"github.com/sunmatus/revel"
 )
 
 var (
@@ -564,7 +564,7 @@ const RevelRoutesTemplate = `// GENERATED CODE - DO NOT EDIT
 // found in all the controllers.
 package routes
 
-import "github.com/revel/revel"
+import "github.com/sunmatus/revel"
 
 {{range $i, $c := .Controllers}}
 type t{{.StructName}} struct {}

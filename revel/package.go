@@ -10,8 +10,8 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/revel/cmd/model"
-	"github.com/revel/cmd/utils"
+	"github.com/sunmatus/cmd/model"
+	"github.com/sunmatus/cmd/utils"
 )
 
 var cmdPackage = &Command{
@@ -28,7 +28,7 @@ Run mode defaults to "dev".
 
 For example:
 
-    revel package github.com/revel/examples/chat
+    revel package github.com/sunmatus/examples/chat
 `,
 }
 

@@ -9,8 +9,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/revel/cmd/logger"
-	"github.com/revel/config"
+	"github.com/sunmatus/cmd/logger"
+	"github.com/sunmatus/config"
 	"github.com/stretchr/testify/assert"
 )
 

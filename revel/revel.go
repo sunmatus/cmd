@@ -17,9 +17,9 @@ import (
 
 	"github.com/agtorre/gocolorize"
 	"github.com/jessevdk/go-flags"
-	"github.com/revel/cmd/logger"
-	"github.com/revel/cmd/model"
-	"github.com/revel/cmd/utils"
+	"github.com/sunmatus/cmd/logger"
+	"github.com/sunmatus/cmd/model"
+	"github.com/sunmatus/cmd/utils"
 )
 
 // Error is used for constant errors.
@@ -34,7 +34,7 @@ const ErrInvalidCommandLine Error = "invalid command line arguments"
 
 const (
 	// RevelCmdImportPath Revel framework cmd tool import path.
-	RevelSkeletonsImportPath = "github.com/revel/skeletons"
+	RevelSkeletonsImportPath = "github.com/sunmatus/skeletons"
 
 	// DefaultRunMode for revel's application.
 	DefaultRunMode = "dev"

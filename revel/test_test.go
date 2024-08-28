@@ -4,8 +4,8 @@ import (
 	"os"
 	"testing"
 
-	"github.com/revel/cmd/model"
-	main "github.com/revel/cmd/revel"
+	"github.com/sunmatus/cmd/model"
+	main "github.com/sunmatus/cmd/revel"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -10,9 +10,9 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/revel/cmd/logger"
-	"github.com/revel/cmd/model"
-	"github.com/revel/cmd/utils"
+	"github.com/sunmatus/cmd/logger"
+	"github.com/sunmatus/cmd/model"
+	"github.com/sunmatus/cmd/utils"
 	"golang.org/x/tools/go/packages"
 )
 

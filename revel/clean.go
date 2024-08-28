@@ -9,8 +9,8 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/revel/cmd/model"
-	"github.com/revel/cmd/utils"
+	"github.com/sunmatus/cmd/model"
+	"github.com/sunmatus/cmd/utils"
 )
 
 var cmdClean = &Command{
@@ -21,7 +21,7 @@ Clean the Revel web application named by the given import path.
 
 For example:
 
-    revel clean github.com/revel/examples/chat
+    revel clean github.com/sunmatus/examples/chat
 
 It removes the app/tmp and app/routes directory.
 

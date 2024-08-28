@@ -7,7 +7,7 @@ import (
 	"strings"
 	"unicode"
 
-	"github.com/revel/cmd/utils"
+	"github.com/sunmatus/cmd/utils"
 )
 
 type SourceInfo struct {
@@ -16,7 +16,7 @@ type SourceInfo struct {
 	StructSpecs []*TypeInfo
 	// ValidationKeys provides a two-level lookup.  The keys are:
 	// 1. The fully-qualified function name,
-	//    e.g. "github.com/revel/examples/chat/app/controllers.(*Application).Action"
+	//    e.g. "github.com/sunmatus/examples/chat/app/controllers.(*Application).Action"
 	// 2. Within that func's file, the line number of the (overall) expression statement.
 	//    e.g. the line returned from runtime.Caller()
 	// The result of the lookup the name of variable being validated.
@@ -36,7 +36,7 @@ type SourceInfo struct {
 
 // TypesThatEmbed returns all types that (directly or indirectly) embed the
 // target type, which must be a fully qualified type name,
-// e.g. "github.com/revel/revel.Controller".
+// e.g. "github.com/sunmatus/revel.Controller".
 func (s *SourceInfo) TypesThatEmbed(targetType, packageFilter string) (filtered []*TypeInfo) {
 	// Do a search in the "embedded type graph", starting with the target type.
 	var (

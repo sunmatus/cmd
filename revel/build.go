@@ -10,9 +10,9 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/revel/cmd/harness"
-	"github.com/revel/cmd/model"
-	"github.com/revel/cmd/utils"
+	"github.com/sunmatus/cmd/harness"
+	"github.com/sunmatus/cmd/model"
+	"github.com/sunmatus/cmd/utils"
 )
 
 var cmdBuild = &Command{
@@ -24,7 +24,7 @@ This allows it to be deployed and run on a machine that lacks a Go installation.
 
 For example:
 
-    revel build github.com/revel/examples/chat /tmp/chat
+    revel build github.com/sunmatus/examples/chat /tmp/chat
 
 `,
 }

@@ -15,10 +15,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/revel/cmd/harness"
-	"github.com/revel/cmd/model"
-	"github.com/revel/cmd/tests"
-	"github.com/revel/cmd/utils"
+	"github.com/sunmatus/cmd/harness"
+	"github.com/sunmatus/cmd/model"
+	"github.com/sunmatus/cmd/tests"
+	"github.com/sunmatus/cmd/utils"
 )
 
 var cmdTest = &Command{
@@ -29,7 +29,7 @@ Run all tests for the Revel app named by the given import path.
 
 For example, to run the booking sample application's tests:
 
-    revel test github.com/revel/examples/booking dev
+    revel test github.com/sunmatus/examples/booking dev
 
 The run mode is used to select which set of app.conf configuration should
 apply and may be used to determine logic in the application itself.

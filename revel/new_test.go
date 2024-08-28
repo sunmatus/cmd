@@ -4,8 +4,8 @@ import (
 	"os"
 	"testing"
 
-	"github.com/revel/cmd/model"
-	main "github.com/revel/cmd/revel"
+	"github.com/sunmatus/cmd/model"
+	main "github.com/sunmatus/cmd/revel"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -40,11 +40,11 @@ func TestNew(t *testing.T) {
 	t.Run("Skeleton-Git", func(t *testing.T) {
 		a := assert.New(t)
 		c := newApp("new/test/c/1", model.NEW, nil, a)
-		c.New.SkeletonPath = "git://github.com/revel/skeletons:basicnsadnsak"
+		c.New.SkeletonPath = "git://github.com/sunmatus/skeletons:basicnsadnsak"
 		a.NotNil(main.Commands[model.NEW].RunWith(c), "Expected Failed to run with new")
 		// We need to pick a different path
 		c = newApp("new/test/c/2", model.NEW, nil, a)
-		c.New.SkeletonPath = "git://github.com/revel/skeletons:basic/bootstrap4"
+		c.New.SkeletonPath = "git://github.com/sunmatus/skeletons:basic/bootstrap4"
 		a.Nil(main.Commands[model.NEW].RunWith(c), "Failed to run with new skeleton git")
 	})
 	if !t.Failed() {

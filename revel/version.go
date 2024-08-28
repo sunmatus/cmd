@@ -21,9 +21,9 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/revel/cmd"
-	"github.com/revel/cmd/model"
-	"github.com/revel/cmd/utils"
+	"github.com/sunmatus/cmd"
+	"github.com/sunmatus/cmd/model"
+	"github.com/sunmatus/cmd/utils"
 )
 
 type (
@@ -103,11 +103,11 @@ func (v *VersionCommand) doRepoCheck(updateLibs bool) (versionInfo string, needs
 		}
 		switch repo {
 		case "revel":
-			title, repo, localVersion = "Revel Framework", "github.com/revel/revel", v.revelVersion
+			title, repo, localVersion = "Revel Framework", "github.com/sunmatus/revel", v.revelVersion
 		case "cmd":
-			title, repo, localVersion = "Revel Cmd", "github.com/revel/cmd/revel", v.cmdVersion
+			title, repo, localVersion = "Revel Cmd", "github.com/sunmatus/cmd/revel", v.cmdVersion
 		case "modules":
-			title, repo, localVersion = "Revel Modules", "github.com/revel/modules", v.modulesVersion
+			title, repo, localVersion = "Revel Modules", "github.com/sunmatus/modules", v.modulesVersion
 		}
 
 		// Only do an update on the first loop, and if specified to update

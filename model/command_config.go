@@ -12,9 +12,9 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/revel/cmd"
-	"github.com/revel/cmd/model/command"
-	"github.com/revel/cmd/utils"
+	"github.com/sunmatus/cmd"
+	"github.com/sunmatus/cmd/model/command"
+	"github.com/sunmatus/cmd/utils"
 )
 
 // The constants.

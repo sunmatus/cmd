@@ -34,9 +34,9 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/revel/cmd/model"
-	"github.com/revel/cmd/utils"
-	"github.com/revel/cmd/watcher"
+	"github.com/sunmatus/cmd/model"
+	"github.com/sunmatus/cmd/utils"
+	"github.com/sunmatus/cmd/watcher"
 )
 
 var (
